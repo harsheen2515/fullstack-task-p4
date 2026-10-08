@@ -10,13 +10,25 @@ function SignUp() {
   const [fullName, setFullName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
 
   const handleSignUp = async (e) => {
     e.preventDefault()
+   
 
-    if (!fullName || !email || !password) {
+    if (!fullName || !email || !password || !confirmPassword) {
       alert('Please fill in all fields')
       return
+    }
+
+   if (!fullName.includes(' ')) {
+   alert('Please enter your first and last name')
+   return
+   }
+    
+    if (password !== confirmPassword) {
+    alert('Passwords do not match')
+    return
     }
 
     if (password.length < 6) {
@@ -61,6 +73,7 @@ function SignUp() {
             placeholder="Full Name"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
+            required
           />
 
           <input
@@ -68,6 +81,7 @@ function SignUp() {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
 
           <input
@@ -75,9 +89,18 @@ function SignUp() {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          
+          <input
+          type="password"
+          placeholder="Confirm Password"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+          required
           />
 
-          <button type="submit">Sign Up</button>
+          <button type="submit">Create Account</button>
         </form>
         <p>
         Already have an account? <Link to="/login">Login</Link>

@@ -69,6 +69,29 @@ nav {
 }
 
 
+.search-box {
+  width: 380px;
+  height: 34px;
+  margin-left: 20px;
+  padding: 0 12px;
+  border: 1px solid #d5dce2;
+  border-radius: 3px;
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.search-box::placeholder {
+  color: #9aa3aa;
+}
+
+.search-box:focus {
+  border-color: #b8c4cc;
+  box-shadow: none;
+}
+
 /* =========================
    BANNER
 ========================= */
