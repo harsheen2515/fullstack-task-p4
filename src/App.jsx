@@ -8,7 +8,7 @@ import Profile from './components/profile'
 import Gallery from './components/gallery'
 import Contact from './components/Contact'
 import Login from './components/login'
-import SignUp from './components/SignUp'
+import SignUp from './components/Signup'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {

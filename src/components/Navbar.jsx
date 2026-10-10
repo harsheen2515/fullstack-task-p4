@@ -14,9 +14,9 @@ function Navbar() {
       />
 
       <div className="nav-links">
-        <Link to="/#about">About</Link>
-        <Link to="/#work">Work</Link>
-        <Link to="/#contact">Contact</Link>
+        <a href="/#about">About</a>
+        <a href="/#work">Work</a>
+        <a href="/#contact">Contact</a>
         <span>Post</span>
         <Link to="/login">Login</Link>
         <Link to="/signup">Sign Up</Link>

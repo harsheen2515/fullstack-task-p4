@@ -829,3 +829,27 @@ nav {
 .auth-form button:hover {
   background-color: #183f56;
 }
+
+
+/* Signup form error messages */
+
+.error-messages {
+  margin-top: 5px;
+  padding: 10px 12px;
+  background-color: #ffecec;
+  border: 1px solid #e74c3c;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.error-message {
+  color: #c0392b;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.success-message {
+  color: #218838;
+  font-size: 14px;
+  margin-top: 10px;
+}
